@@ -14,24 +14,10 @@ function clearInputField() {
   document.getElementById('my-form').reset();
 }
 
-//animates on hero section only
-// if (window.scrollY < 50) {
-//   codeIntro.classList.add('animated');
-//   imageIntro.classList.add('animated');
-// }
-
 window.addEventListener("load", function () {
   const codeIntro = document.querySelector(".code-intro");
   const imageIntro = document.querySelector(".image-intro");
 
-  // Always make visible
-  codeIntro?.classList.remove("hidden-slide");
-  imageIntro?.classList.remove("hidden-slide");
-
-  // Animate only if at top of page
-  if (window.scrollY < 50) {
-    codeIntro?.classList.add("slide-left");
-    imageIntro?.classList.add("slide-right");
-  }
+  codeIntro?.classList.add("animate");
+  imageIntro?.classList.add("animate");
 });
-

@@ -76,61 +76,48 @@ a.nav-link.text-hover-2:focus {
 a.nav-link.text-hover-2 {
   transition: color 0.3s ease;
 }
+
 .code-intro {
   font-family: 'Courier New', Courier, monospace;
   padding: 1.5rem;
   border-radius: 0.5rem;
   white-space: pre-wrap;
 }
-//   /* Start hidden and moved slightly left */
-//   opacity: 0;
-//   transform: translateX(-150px);
-
-//   /* Animate to visible and in place */
-//   animation: fadeSlideIn 2.5s ease-out forwards;
-// }
-
-// .image-intro {
-//   /* Start hidden and moved slightly left */
-//   opacity: 0;
-//   transform: translateX(150px);
-
-//   /* Animate to visible and in place */
-//   animation: fadeSlideIn 2.5s ease-out forwards;
-// }
 
 // Shared starting state
-.hidden-slide {
-  opacity: 0;
-}
-
 .code-intro,
 .image-intro {
-  opacity: 1;
-  transform: translateX(0);
+  opacity: 0;
+  transform: translateX(0); // set default to avoid layout shift
 }
 
-// Slide left
-.code-intro.slide-left {
-  transform: translateX(-150px);
-  animation: fadeSlideInLeft 2.5s ease-out forwards;
+/* Animation classes */
+.code-intro.animate {
+  animation: fadeSlideInLeft 1.8s ease-out forwards;
 }
 
-// Slide right
-.image-intro.slide-right {
-  transform: translateX(150px);
-  animation: fadeSlideInRight 2.5s ease-out forwards;
+.image-intro.animate {
+  animation: fadeSlideInRight 1.8s ease-out forwards;
 }
 
+/* Keyframes */
 @keyframes fadeSlideInLeft {
-  to {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  100% {
     opacity: 1;
     transform: translateX(0);
   }
 }
 
 @keyframes fadeSlideInRight {
-  to {
+  0% {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+  100% {
     opacity: 1;
     transform: translateX(0);
   }
