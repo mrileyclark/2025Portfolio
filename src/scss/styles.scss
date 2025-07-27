@@ -100,18 +100,23 @@ a.nav-link.text-hover-2 {
 // }
 
 // Shared starting state
-.code-intro,
-.image-intro {
+.hidden-slide {
   opacity: 0;
 }
 
-// Slide in from left
+.code-intro,
+.image-intro {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+// Slide left
 .code-intro.slide-left {
   transform: translateX(-150px);
   animation: fadeSlideInLeft 2.5s ease-out forwards;
 }
 
-// Slide in from right
+// Slide right
 .image-intro.slide-right {
   transform: translateX(150px);
   animation: fadeSlideInRight 2.5s ease-out forwards;
