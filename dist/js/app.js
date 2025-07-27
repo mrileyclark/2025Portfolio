@@ -21,7 +21,7 @@ function clearInputField() {
 // }
 
 window.addEventListener("load", function () {
-  if (window.scrollY === 0) {
+  if (window.scrollY < 50) {
     const codeIntro = document.querySelector(".code-intro");
     const imageIntro = document.querySelector(".image-intro");
 
