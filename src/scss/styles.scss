@@ -78,26 +78,31 @@ a.nav-link.text-hover-2 {
 }
 .code-intro {
   font-family: 'Courier New', Courier, monospace;
-  color: #9505a8;
   padding: 1.5rem;
   border-radius: 0.5rem;
   white-space: pre-wrap;
-
-  /* Start hidden and moved slightly left */
-  opacity: 0;
-  transform: translateX(-150px);
-
-  /* Animate to visible and in place */
-  animation: fadeSlideIn 2.5s ease-out forwards;
 }
+//   /* Start hidden and moved slightly left */
+//   opacity: 0;
+//   transform: translateX(-150px);
 
+//   /* Animate to visible and in place */
+//   animation: fadeSlideIn 2.5s ease-out forwards;
+// }
+
+// .image-intro {
+//   /* Start hidden and moved slightly left */
+//   opacity: 0;
+//   transform: translateX(150px);
+
+//   /* Animate to visible and in place */
+//   animation: fadeSlideIn 2.5s ease-out forwards;
+// }
+
+.code-intro,
 .image-intro {
-  /* Start hidden and moved slightly left */
   opacity: 0;
-  transform: translateX(150px);
-
-  /* Animate to visible and in place */
-  animation: fadeSlideIn 2.5s ease-out forwards;
+  transform: translateX(-150px); // or 150px for .image-intro
 }
 
 .code-intro h1,
