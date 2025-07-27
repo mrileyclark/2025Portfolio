@@ -24,6 +24,10 @@ $font-family-base: 'Montserrat', sans-serif;
 $headings-font-family: 'Roboto', sans-serif;
 
 //Custom CSS
+html {
+  scroll-behavior: smooth;
+}
+
 .shadow-theme {
   box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.75);
 }
