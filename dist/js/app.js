@@ -15,12 +15,17 @@ function clearInputField() {
 }
 
 //animates on hero section only
-window.addEventListener("load", function () {
-  if (window.scrollY === 0) {
-    const codeIntro = document.querySelector(".code-intro");
-    const imageIntro = document.querySelector(".image-intro");
+if (window.scrollY < 50) {
+  codeIntro.classList.add('animated');
+  imageIntro.classList.add('animated');
+}
 
-    codeIntro?.classList.add("slide-left");
-    imageIntro?.classList.add("slide-right");
-  }
-});
+// window.addEventListener("load", function () {
+//   if (window.scrollY === 0) {
+//     const codeIntro = document.querySelector(".code-intro");
+//     const imageIntro = document.querySelector(".image-intro");
+
+//     codeIntro?.classList.add("slide-left");
+//     imageIntro?.classList.add("slide-right");
+//   }
+// });
