@@ -1,0 +1,13 @@
+{
+  "liveSassCompile.settings.includeItems": [
+    "/src/scss/styles.scss"
+  ],
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "/dist/css"
+    }
+  ],
+  "liveServer.settings.port": 5502
+}

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Fauna+One&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* custom styles wrapped inside @layer utilities */
+@layer utilities {
+  html {
+    font-family: 'Fauna One', serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cinzel', serif;
+  }
+
+  /* ****** Mobile menu toggle ****** */
+  #menu-toggle:checked ~ .menu {
+    display: block;
+  }
+
+  #menu-toggle:checked ~ .header {
+    margin-top: 0;
+  }
+}

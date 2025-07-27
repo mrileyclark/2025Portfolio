@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Mary Clark - Final Tailwind</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.min.css">
+  </head>
+
+  <body class="overflow-x-hidden">
+    <div class="sticky top-0 z-50 border-b-2 border-slate-200 bg-white pl-0 sm:pl-20">
+      <!-- Toggle label -->
+      <input id="menu-toggle" type="checkbox" class="hidden">
+      <label for="menu-toggle" aria-label="Toggle menu" class="flex cursor-pointer items-center justify-center p-4 font-bold sm:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+        </svg>
+      </label>
+      <nav class="menu sticky top-0 z-50 hidden items-center justify-center sm:flex" role="navigation">
+        <ul class="w-full flex-col divide-y bg-white sm:flex sm:flex-row sm:space-x-[2.5]">
+          <li><a href="#" class="block p-4 hover:bg-slate-200 sm:p-6">Home</a></li>
+          <li><a href="#" class="block p-4 hover:bg-slate-200 sm:p-6">About</a></li>
+          <li><a href="#" class="block p-4 hover:bg-slate-200 sm:p-6">Dragons</a></li>
+          <li><a href="#" class="block p-4 hover:bg-slate-200 sm:p-6">Literature</a></li>
+          <li><a href="#" class="block p-4 hover:bg-slate-200 sm:p-6">Film</a></li>
+        </ul>
+      </nav>
+    </div>
+    <header class="header relative my-0 min-h-[600px] bg-stone-600 bg-[url('../images/medieval-workbench2.jpg')] bg-cover bg-center text-white" role="banner">
+      <div class="absolute right-10 top-0 h-auto w-4/5 bg-primary-100 p-6 text-white sm:right-20 md:w-2/5">
+        <h1 class="mb-4 text-5xl font-bold">Discover the Mystical World of Dragons</h1>
+        <p>Embark on a journey through time and fantasy, exploring the majestic creatures that have captured human imagination for centuries...</p>
+      </div>
+    </header>
+
+    <main class="p-8" role="main">
+      <section id="top-blurbs" class="mx-auto mb-4 grid max-w-5xl gap-4 border-b-[1px] border-slate-200 pb-8 sm:grid-cols-3">
+        <div>
+          <h2 class="mb-2 text-2xl font-bold">The Realm of Dragons</h2>
+          <p>Dragons have long been a symbol of power and mystery, existing in both the natural world and the realms of fantasy. Real dragons, such as the Komodo dragon, are fascinating reptiles known for their impressive size and strength. In contrast, fictional dragons are often depicted as fire-breathing, winged creatures that soar through the skies of medieval tales. This section introduces you to the captivating dichotomy between these two worlds.</p>
+        </div>
+        <div>
+          <h2 class="mb-2 text-2xl font-bold">Real Dragons: Nature's Marvels</h2>
+          <p>The Komodo dragon, native to Indonesia, is the largest living lizard, renowned for its formidable hunting skills and unique adaptations. These real-life dragons are a testament to nature's ingenuity, showcasing a blend of power and survival instincts that have fascinated scientists and enthusiasts alike.</p>
+        </div>
+        <div>
+          <h2 class="mb-2 text-2xl font-bold">Fictional Dragons: Legends of Lore</h2>
+          <p>From the pages of ancient myths to modern fantasy novels, fictional dragons have been depicted as majestic and fearsome creatures. Often associated with magic and heroism, these dragons have become iconic figures in storytelling, representing the ultimate challenge for brave knights and adventurers.</p>
+        </div>
+      </section>
+
+      <section id="real-vs-fictional" class="mx-auto mb-4 max-w-5xl gap-4 pt-4">
+        <div class="mb-4 grid grid-cols-1">
+          <h2 class="mb-2 text-4xl font-bold sm:text-5xl">Real vs. Fictional Dragons: A Comparative Study</h2>
+          <p class="mb-4 sm:mb-0">Explore the intriguing differences and similarities between real dragons, like the Komodo dragon, and their mythical counterparts. This table highlights key features that set these fascinating creatures apart.</p>
+        </div>
+        <div class="grid-cols-2 gap-4 sm:grid">
+          <div class="mb-8 text-info sm:mb-0">
+            <h3 class="mb-2 text-xl font-bold">Komodo Dragon</h3>
+            <ul class="divide-y rounded-md border border-slate-300">
+              <li class="flex items-center p-2 hover:bg-slate-200"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="mr-1 size-6">
+                  <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM6.262 6.072a8.25 8.25 0 1 0 10.562-.766 4.5 4.5 0 0 1-1.318 1.357L14.25 7.5l.165.33a.809.809 0 0 1-1.086 1.085l-.604-.302a1.125 1.125 0 0 0-1.298.21l-.132.131c-.439.44-.439 1.152 0 1.591l.296.296c.256.257.622.374.98.314l1.17-.195c.323-.054.654.036.905.245l1.33 1.108c.32.267.46.694.358 1.1a8.7 8.7 0 0 1-2.288 4.04l-.723.724a1.125 1.125 0 0 1-1.298.21l-.153-.076a1.125 1.125 0 0 1-.622-1.006v-1.089c0-.298-.119-.585-.33-.796l-1.347-1.347a1.125 1.125 0 0 1-.21-1.298L9.75 12l-1.64-1.64a6 6 0 0 1-1.676-3.257l-.172-1.03Z" clip-rule="evenodd" />
+                </svg>
+                <a href="#">Habitat</a>
+              </li>
+              <li class="flex items-center p-2 hover:bg-slate-200"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-1 size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941" />
+                </svg><a href="#">Size</a></li>
+              <li class="flex items-center p-2 hover:bg-slate-200"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="mr-1 size-6">
+                  <path fill-rule="evenodd" d="M8.478 1.6a.75.75 0 0 1 .273 1.026 3.72 3.72 0 0 0-.425 1.121c.058.058.118.114.18.168A4.491 4.491 0 0 1 12 2.25c1.413 0 2.673.651 3.497 1.668.06-.054.12-.11.178-.167a3.717 3.717 0 0 0-.426-1.125.75.75 0 1 1 1.298-.752 5.22 5.22 0 0 1 .671 2.046.75.75 0 0 1-.187.582c-.241.27-.505.52-.787.749a4.494 4.494 0 0 1 .216 2.1c-.106.792-.753 1.295-1.417 1.403-.182.03-.364.057-.547.081.152.227.273.476.359.742a23.122 23.122 0 0 0 3.832-.803 23.241 23.241 0 0 0-.345-2.634.75.75 0 0 1 1.474-.28c.21 1.115.348 2.256.404 3.418a.75.75 0 0 1-.516.75c-1.527.499-3.119.854-4.76 1.049-.074.38-.22.735-.423 1.05 2.066.209 4.058.672 5.943 1.358a.75.75 0 0 1 .492.75 24.665 24.665 0 0 1-1.189 6.25.75.75 0 0 1-1.425-.47 23.14 23.14 0 0 0 1.077-5.306c-.5-.169-1.009-.32-1.524-.455.068.234.104.484.104.746 0 3.956-2.521 7.5-6 7.5-3.478 0-6-3.544-6-7.5 0-.262.037-.511.104-.746-.514.135-1.022.286-1.522.455.154 1.838.52 3.616 1.077 5.307a.75.75 0 1 1-1.425.468 24.662 24.662 0 0 1-1.19-6.25.75.75 0 0 1 .493-.749 24.586 24.586 0 0 1 4.964-1.24h.01c.321-.046.644-.085.969-.118a2.983 2.983 0 0 1-.424-1.05 24.614 24.614 0 0 1-4.76-1.05.75.75 0 0 1-.516-.75c.057-1.16.194-2.302.405-3.417a.75.75 0 0 1 1.474.28c-.164.862-.28 1.74-.345 2.634 1.237.371 2.517.642 3.832.803.085-.266.207-.515.359-.742a18.698 18.698 0 0 1-.547-.08c-.664-.11-1.311-.612-1.417-1.404a4.535 4.535 0 0 1 .217-2.103 6.788 6.788 0 0 1-.788-.751.75.75 0 0 1-.187-.583 5.22 5.22 0 0 1 .67-2.04.75.75 0 0 1 1.026-.273Z" clip-rule="evenodd" />
+                </svg>
+                <a href="#">Diet</a>
+              </li>
+              <li class="flex items-center p-2 hover:bg-slate-200"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-1 size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
+                </svg><a href="#">Abilities</a></li>
+              <li class="flex items-center p-2 hover:bg-slate-200"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="mr-1 size-6">
+                  <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12ZM12 8.25a.75.75 0 0 1 .75.75v3.75a.75.75 0 0 1-1.5 0V9a.75.75 0 0 1 .75-.75Zm0 8.25a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" clip-rule="evenodd" />
+                </svg><a href="#">Conservation Status</a></li>
+            </ul>
+          </div>
+          <div class="mb-8 text-success sm:mb-0">
+            <h3 class="mb-2 text-xl font-bold">Smaug</h3>
+            <ul class="divide-y rounded-md border border-slate-300">
+              <li class="flex items-center p-2 hover:bg-slate-200"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="mr-1 size-6">
+                  <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM6.262 6.072a8.25 8.25 0 1 0 10.562-.766 4.5 4.5 0 0 1-1.318 1.357L14.25 7.5l.165.33a.809.809 0 0 1-1.086 1.085l-.604-.302a1.125 1.125 0 0 0-1.298.21l-.132.131c-.439.44-.439 1.152 0 1.591l.296.296c.256.257.622.374.98.314l1.17-.195c.323-.054.654.036.905.245l1.33 1.108c.32.267.46.694.358 1.1a8.7 8.7 0 0 1-2.288 4.04l-.723.724a1.125 1.125 0 0 1-1.298.21l-.153-.076a1.125 1.125 0 0 1-.622-1.006v-1.089c0-.298-.119-.585-.33-.796l-1.347-1.347a1.125 1.125 0 0 1-.21-1.298L9.75 12l-1.64-1.64a6 6 0 0 1-1.676-3.257l-.172-1.03Z" clip-rule="evenodd" />
+                </svg>
+                <a href="#">Habitat</a>
+              </li>
+              <li class="flex items-center p-2 hover:bg-slate-200"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-1 size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941" />
+                </svg><a href="#">Size</a></li>
+              <li class="flex items-center p-2 hover:bg-slate-200"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="mr-1 size-6">
+                  <path fill-rule="evenodd" d="M8.478 1.6a.75.75 0 0 1 .273 1.026 3.72 3.72 0 0 0-.425 1.121c.058.058.118.114.18.168A4.491 4.491 0 0 1 12 2.25c1.413 0 2.673.651 3.497 1.668.06-.054.12-.11.178-.167a3.717 3.717 0 0 0-.426-1.125.75.75 0 1 1 1.298-.752 5.22 5.22 0 0 1 .671 2.046.75.75 0 0 1-.187.582c-.241.27-.505.52-.787.749a4.494 4.494 0 0 1 .216 2.1c-.106.792-.753 1.295-1.417 1.403-.182.03-.364.057-.547.081.152.227.273.476.359.742a23.122 23.122 0 0 0 3.832-.803 23.241 23.241 0 0 0-.345-2.634.75.75 0 0 1 1.474-.28c.21 1.115.348 2.256.404 3.418a.75.75 0 0 1-.516.75c-1.527.499-3.119.854-4.76 1.049-.074.38-.22.735-.423 1.05 2.066.209 4.058.672 5.943 1.358a.75.75 0 0 1 .492.75 24.665 24.665 0 0 1-1.189 6.25.75.75 0 0 1-1.425-.47 23.14 23.14 0 0 0 1.077-5.306c-.5-.169-1.009-.32-1.524-.455.068.234.104.484.104.746 0 3.956-2.521 7.5-6 7.5-3.478 0-6-3.544-6-7.5 0-.262.037-.511.104-.746-.514.135-1.022.286-1.522.455.154 1.838.52 3.616 1.077 5.307a.75.75 0 1 1-1.425.468 24.662 24.662 0 0 1-1.19-6.25.75.75 0 0 1 .493-.749 24.586 24.586 0 0 1 4.964-1.24h.01c.321-.046.644-.085.969-.118a2.983 2.983 0 0 1-.424-1.05 24.614 24.614 0 0 1-4.76-1.05.75.75 0 0 1-.516-.75c.057-1.16.194-2.302.405-3.417a.75.75 0 0 1 1.474.28c-.164.862-.28 1.74-.345 2.634 1.237.371 2.517.642 3.832.803.085-.266.207-.515.359-.742a18.698 18.698 0 0 1-.547-.08c-.664-.11-1.311-.612-1.417-1.404a4.535 4.535 0 0 1 .217-2.103 6.788 6.788 0 0 1-.788-.751.75.75 0 0 1-.187-.583 5.22 5.22 0 0 1 .67-2.04.75.75 0 0 1 1.026-.273Z" clip-rule="evenodd" />
+                </svg>
+                <a href="#">Diet</a>
+              </li>
+              <li class="fa fa-magic flex items-center p-2 hover:bg-slate-200" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-1 size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
+                </svg><a href="#">Abilities</a></li>
+              <li class="flex items-center p-2 hover:bg-slate-200"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="mr-1 size-6">
+                  <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12ZM12 8.25a.75.75 0 0 1 .75.75v3.75a.75.75 0 0 1-1.5 0V9a.75.75 0 0 1 .75-.75Zm0 8.25a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" clip-rule="evenodd" />
+                </svg>
+                <a href="#">Conservation Status</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="container-fluid mb-8 bg-primary-100 pb-8">
+      <section id="features" class="mx-auto max-w-6xl p-4 text-white">
+        <h2 class="m-8 text-center text-4xl font-bold sm:text-5xl">Dragon Features</h2>
+        <div class="flex flex-col gap-6 sm:flex-row">
+          <div class="flex flex-1 flex-col justify-stretch bg-white p-4 text-black">
+            <h3 class="text-2xl font-bold">Majestic Wings</h3>
+            <img src="images/majestic-wings.jpg" alt="A dragon perched on a rock." width="1600" height="1200" class="-order-1 mb-4 h-auto w-full rounded-xl">
+            <p class="my-5 border-b-2 border-slate-200 pb-4">Fictional dragons are often depicted with expansive, leathery wings, allowing them to soar through the skies with grace and power.</p>
+            <a href="#" class="inline-block w-fit rounded-full bg-success px-3 py-2 text-white">More about Wings</a>
+          </div>
+          <div class="flex flex-1 flex-col justify-stretch bg-white p-4 text-black">
+            <h3 class="text-2xl font-bold">Scaly Armor</h3>
+            <img src="images/scaly-armor.jpg" alt="Dragon scales." width="1600" height="1200" class="-order-1 mb-4 h-auto w-full rounded-xl">
+            <p class="my-5 border-b-2 border-slate-200 pb-4">Real dragons, like the Komodo dragon, boast tough, scaly skin that provides protection and aids in camouflage.</p>
+            <a href="#" class="inline-block w-fit rounded-full bg-success px-3 py-2 text-white">More about Armor</a>
+          </div>
+          <div class="flex flex-1 flex-col justify-stretch bg-white p-4 text-black">
+            <h3 class="text-2xl font-bold">Fiery Breath</h3>
+            <img src="images/fiery-breath.jpg" alt="Dragon breathing fire." width="1600" height="1200" class="-order-1 mb-4 h-auto w-full rounded-xl">
+            <p class="my-5 border-b-2 border-slate-200 pb-4">Legendary dragons are famed for their ability to breathe fire, a trait that has captured imaginations for centuries.</p>
+            <a href="#" class="inline-block w-fit rounded-full bg-success px-3 py-2 text-white">More about Fiery Breath</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section id="imagery" class="mx-auto mb-4 max-w-5xl p-8 pt-4 md:mx-auto lg:p-0">
+      <h2 class="mb-2 text-center text-xl font-bold sm:text-2xl">Dragon Imagery</h2>
+      <h3 class="mb-4 text-center text-3xl font-bold sm:text-4xl">A Visual Journey Through Dragon Lore</h3>
+      <div class="grid grid-cols-1 gap-4 border-b-2 border-slate-200 pb-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
+        <img src="images/komodo-3.jpg" width="1600" height="1600" alt="Komodo dragon." class="h-auto w-full rounded-md">
+        <img src="images/dragon-1.jpg" width="1600" height="1600" alt="A horned dragon." class="h-auto w-full rounded-md">
+        <img src="images/komodo-1.jpg" width="1600" height="1600" alt="Komodo dragon perched on a rock." class="h-auto w-full rounded-md">
+        <img src="images/dragon-3.jpg" width="1600" height="1600" alt="A flying dragon." class="h-auto w-full rounded-md">
+        <img src="images/komodo-2.jpg" width="1600" height="1600" alt="Komodo dragon." class="h-auto w-full rounded-md">
+        <img src="images/dragon-2.jpg" width="1600" height="1600" alt="A dragon with glowing eyes." class="h-auto w-full rounded-md">
+      </div>
+
+      <section id="enthusiasts" class="mx-auto mb-0 mt-5 max-w-5xl p-4 sm:mb-4 sm:mt-10 sm:p-8 md:mx-auto lg:p-0">
+        <h2 class="mb-5 text-2xl font-bold sm:mb-10 sm:text-4xl">Dragon Enthusiasts Speak</h2>
+        <div class="gap-4 sm:flex">
+          <div class="mb-8 flex flex-1 flex-col sm:mb-0">
+            <div>
+              <blockquote class="mb-4 border-l-4 border-l-red-500 pl-2">The intricate details of dragon mythology have always fascinated me. The blend of reality and fantasy is truly captivating.</blockquote>
+            </div>
+            <div>
+              <img src="images/scholar.jpg" alt="A female scholar." width="800" height="800" class="h-auto w-full rounded-md">
+              <p class="pt-4">Emily Draconis</p>
+              <p class="text-black opacity-60">Mythology Scholar</p>
+            </div>
+          </div>
+          <div class="flex flex-1 flex-col justify-between">
+            <div>
+              <blockquote class="mb-4 border-l-4 border-l-red-500 pl-2">Exploring the world of dragons, both real and imagined, is a into the heart of ancient storytelling.</blockquote>
+            </div>
+            <div>
+              <img src=" images/author.jpg" alt="A male scholar." width="800" height="800" class="h-auto w-full rounded-md">
+              <p class="pt-4">Liam Wyvern</p>
+              <p class="text-black opacity-60">Fantasy Author</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <div class="container-full mt-6 h-60 bg-secondary p-8 text-center text-white sm:mt-12">
+      <form action=".">
+        <h2 class="mb-8 mt-4 text-4xl font-bold">Subscribe to newsletter</h2>
+        <div class="flex justify-center gap-4 px-10 sm:gap-8">
+          <input id="email" name="email" type="email" placeholder="Email" aria-label="Email" class="flex-1 border-b-2 border-white bg-transparent p-2 placeholder:text-white">
+          <input type="submit" value="subscribe" class="flex-1 bg-success p-2">
+        </div>
+      </form>
+    </div>
+    <div class="h-20 w-full bg-primary-200"></div>
+    <div class="h-16 w-full bg-primary-300 opacity-90"></div>
+    <div class="h-10 w-full bg-primary-300"></div>
+  </body>
+
+</html>
